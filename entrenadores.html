@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrenadores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER CON EL MENU -->
+    <header>
+        <nav class="mega-menu">
+            <ul class="menu-header">
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li class="desplegable">
+                    <span class="burger-menu">&#9776;</span>
+                    <div class="mega-desplegable">
+                        <div class="columna">
+                            <h4>Clases</h4>
+                            <a href="clases.html">Clases</a>
+                            <a href="clases.html">Horarios</a>
+                            <a href="clases.html">Galeria</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Entrenadores</h4>
+                            <a href="entrenadores.html">Nuestro Equipo</a>
+                            <a href="entrenadores.html">Estadisticas</a>
+                            <a href="entrenadores.html">Clasificacion</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Planes y Precios</h4>
+                            <a href="precios.html">Precios y Planes</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Blog</h4>
+                            <a href="blog.html">Ver Blog</a>
+                            <a href="blog.html">Comentarios</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <span id="icon">🌙</span>
+        </button>
+    </header>
+    <main class="contenido-principal">
+        <!-- ENTRENADORES - TARJETAS-BARRA-ESTRELLAS: tarjetas de entrenadores donde se muestra sus stats en forma de barras animadas y un rating de estrellas animadas -->
+        <section class="entrenadores">
+            <h2>NUESTROS ENTRENADORES</h2>
+            <div class="contenedor-tarjetas">
+                <!-- TARJETA: todo lo que es la tarjeta, se repite lo mismo hasta la cantidad de tarjetas que se quieran -->
+                <div class="tarjeta-girar">
+                    <div class="tarjeta-entrenador">
+                        <div class="cara cara-frontal">
+                            <img src="https://images.pexels.com/photos/12472019/pexels-photo-12472019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Entrenador 1">
+                            <h3>Lucas Ramirez</h3>
+                            <p>Especialidad: Musculacion y fuerza funcional</p>
+                            <p>"No se trata de ser el mas fuerte, sino de superarte cada dia un poco mas."</p>
+                        </div>
+                        <div class="cara cara-trasera">
+                            <h3>Lucas Ramirez</h3>
+                            <p>Experiencia: 8 años</p>
+                            <p>Certificaciones: NSCA - Certified Strength and Conditioning Specialist</p>
+                            <!-- La barra de habilidades y su progreso para despues en el css darle animacion hasta ese punto -->
+                            <div class="habilidades">
+                                <div class="habilidad">
+                                    <span>Fuerza</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Flexibilidad</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Resistencia</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- El rating, las estrellas se colocan 2 veces, una para estrellas vacias, otra para estrellas doradas, las doradas aparecen segun el rating -->
+                            <div class="rating">
+                                <div class="estrellas">
+                                    <div class="grises">★★★★★</div>
+                                    <div class="doradas" style="--rating: 4">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TARJETA -->
+                <div class="tarjeta-girar">
+                    <div class="tarjeta-entrenador">
+                        <div class="cara cara-frontal">
+                            <img src="
+                            https://images.pexels.com/photos/6740746/pexels-photo-6740746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Entrenador 2">
+                            <h3>Valentina Rios</h3>
+                            <p>Especialidad: Yoga y movilidad consciente</p>
+                            <p>"La verdadera fuerza nace del equilibrio entre mente y cuerpo."</p>
+                        </div>
+                        <div class="cara cara-trasera">
+                            <h3>Valentina Rios</h3>
+                            <p>Experiencia: 6 años</p>
+                            <p>Certificaciones: Especializacion en Yoga Restaurativo</p>
+                            <div class="habilidades">
+                                <div class="habilidad">
+                                    <span>Fuerza</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Flexibilidad</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 98%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Resistencia</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <div class="estrellas">
+                                    <div class="grises">★★★★★</div>
+                                    <div class="doradas" style="--rating: 5">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TARJETA -->
+                <div class="tarjeta-girar">
+                    <div class="tarjeta-entrenador">
+                        <div class="cara cara-frontal">
+                            <img src="
+                            https://images.pexels.com/photos/3836883/pexels-photo-3836883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Entrenador 3">
+                            <h3>Matias Herrera</h3>
+                            <p>Especialidad: CrossFit y entrenamiento HIIT</p>
+                            <p>"Sudor hoy, progreso mañana."</p>
+                        </div>
+                        <div class="cara cara-trasera">
+                            <h3>Matias Herrera</h3>
+                            <p>Experiencia: 7 años</p>
+                            <p>Certificaciones: CrossFit Level 2 Trainer</p>
+                            <div class="habilidades">
+                                <div class="habilidad">
+                                    <span>Fuerza</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Flexibilidad</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Resistencia</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <div class="estrellas">
+                                    <div class="grises">★★★★★</div>
+                                    <div class="doradas" style="--rating: 4">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TARJETA -->
+                <div class="tarjeta-girar">
+                    <div class="tarjeta-entrenador">
+                        <div class="cara cara-frontal">
+                            <img src="
+                            https://images.pexels.com/photos/29259706/pexels-photo-29259706/free-photo-of-mujer-haciendo-ejercicio-en-equipo-de-gimnasio-en-un-centro-de-fitness.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Entrenador 4">
+                            <h3>Florencia Silva</h3>
+                            <p>Especialidad: Spinning y entrenamiento cardiovascular</p>
+                            <p>"No hay limites cuando tu motivacion es mas fuerte que tus excusas."</p>
+                        </div>
+                        <div class="cara cara-trasera">
+                            <h3>Florencia Silva</h3>
+                            <p>Experiencia: 5 años</p>
+                            <p>Certificaciones: Personal Trainer - ISSA</p>
+                            <div class="habilidades">
+                                <div class="habilidad">
+                                    <span>Fuerza</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 72%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Flexibilidad</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="habilidad">
+                                    <span>Resistencia</span>
+                                    <div class="barra">
+                                        <div class="progreso" style="--porcentaje: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <div class="estrellas">
+                                    <div class="grises">★★★★★</div>
+                                    <div class="doradas" style="--rating: 5">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribete al Newsletter!</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <!-- REDES SOCIALES -->
+            <div class="redes">
+                <h3>Siguenos en nuestras redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+            <!-- MAPA EMBEBIDO -->
+            <div class="mapa">
+                <h3>Donde nos ubicamos</h3>
+                <div class="mapa-embebido">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.477148441552!2d-65.29177766125869!3d-24.19006300533452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1743828605424!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="150"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const icon = document.getElementById('icon');
+
+        if(localStorage.getItem('dark-mode') === 'true'){
+            document.body.classList.add('dark-mode');
+            icon.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const dark = document.body.classList.contains('dark-mode');
+            icon.textContent = dark ? '☀️' : '🌙';
+            localStorage.setItem('dark-mode', dark);
+        });
+    </script>
+</body>
+</html>

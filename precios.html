@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Precios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER CON EL MENU -->
+    <header>
+        <nav class="mega-menu">
+            <ul class="menu-header">
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li class="desplegable">
+                    <span class="burger-menu">&#9776;</span>
+                    <div class="mega-desplegable">
+                        <div class="columna">
+                            <h4>Clases</h4>
+                            <a href="clases.html">Clases</a>
+                            <a href="clases.html">Horarios</a>
+                            <a href="clases.html">Galeria</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Entrenadores</h4>
+                            <a href="entrenadores.html">Nuestro Equipo</a>
+                            <a href="entrenadores.html">Estadisticas</a>
+                            <a href="entrenadores.html">Clasificacion</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Planes y Precios</h4>
+                            <a href="precios.html">Precios y Planes</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Blog</h4>
+                            <a href="blog.html">Ver Blog</a>
+                            <a href="blog.html">Comentarios</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <span id="icon">🌙</span>
+        </button>
+    </header>
+    <main class="contenido-principal">
+        <!-- PRECIOS: muestra los distintos planes y su precio, ademas de las ventajas que tiene cada plan -->
+         <section class="precios">
+            <h2>COMPARADOR DE PRECIOS DE PLANES</h2>
+            <!-- TOGGLE: es para manejar el cambia de precios y efecto de resaltado en los planes, estan escondidos por que lo que importa son los labels debajo, esto es para trabajar en el css -->
+            <input type="radio" name="plan-toggle" id="mensual" checked hidden>
+            <input type="radio" name="plan-toggle" id="semestral" hidden>
+            <input type="radio" name="plan-toggle" id="anual" hidden>
+            <div class="toggle-botones">
+                <label for="mensual">Mensual</label>
+                <label for="semestral">Semestral</label>
+                <label for="anual">Anual</label>
+            </div>
+            <!-- AQUI ESTAN LOS TOOLTIPS TAMBIEN: los tooltips aparecen al pasar el mouse sobre uno de los items que trae el plan -->
+            <div class="planes">
+                <div class="plan">
+                    <h3>Plan Basico</h3>
+                    <!-- etiquetas para guardar el precio de cada plan en su forma mensual, semestral y anual -->
+                    <p class="precio" data-precio-mensual="$10" data-precio-semestral="$50" data-precio-anual="$90"></p>
+                    <ul>
+                        <li title="Uso libre de la sala principal con máquinas y pesas">Acceso a la sala de musculacion</li>
+                        <li title="Clases como yoga o funcional, hasta 3 veces semanales">Clases grupales 3 veces por semana</li>
+                        <li title="No incluye sesiones con entrenadores personales">Sin acceso a entrenadores personalizados</li>
+                        <li title="Podés asistir solo dentro de ese horario">Horario restringido (09:00 a 17:00)</li>
+                        <li title="Solo funciones de seguimiento general de actividad">Acceso a app movil basica</li>
+                        <li title="Máximo de 12 asistencias al mes">Asistencia mensual limitada</li>
+                    </ul>
+                </div>
+                <div class="plan">
+                    <h3>Plan Estandar</h3>
+                    <p class="precio" data-precio-mensual="$20" data-precio-semestral="$100" data-precio-anual="$180"></p>
+                    <ul>
+                        <li title="Incluye todos los beneficios del plan Basico">Todo lo del plan basico</li>
+                        <li title="Podes asistir a todas las clases grupales disponibles">Clases ilimitadas por semana</li>
+                        <li title="Consultas y guias en clases dirigidas">Acceso a entrenadores grupales</li>
+                        <li title="Podes venir en cualquier momento del dia">Horario libre (08:00 a 22:00)</li>
+                        <li title="Acceso a planes de entrenamiento adaptados a vos">App con rutinas personalizadas</li>
+                        <li title="Analisis corporal y seguimiento de progreso bimensual">Evaluacion fisica cada 2 meses</li>
+                    </ul>
+                </div>
+                <div class="plan">
+                    <h3>Plan Premium</h3>
+                    <p class="precio" data-precio-mensual="$30" data-precio-semestral="$150" data-precio-anual="$270"></p>
+                    <ul>
+                        <li title="Incluye todo lo de los planes Basico y Estandar">Todo lo del plan estandar</li>
+                        <li title="Acceso libre a todas las maquinas, pesos y zonas especiales">Uso ilimitado de todas las areas</li>
+                        <li title="Entrenamientos adaptados, seguimiento y contacto directo">Entrenador personal 1 vez por semana</li>
+                        <li title="Planes de nutricion segun tus objetivos">Asesoria nutricional mensual</li>
+                        <li title="Videos exclusivos y contenido de entrenamiento desde la app">Contenido exclusivo en la app</li>
+                        <li title="Descuentos en suplementos, ropa y accesorios deportivos">Beneficios con marcas asociadas</li>
+                    </ul>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribete al Newsletter!</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <!-- REDES SOCIALES -->
+            <div class="redes">
+                <h3>Siguenos en nuestras redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+            <!-- MAPA EMBEBIDO -->
+            <div class="mapa">
+                <h3>Donde nos ubicamos</h3>
+                <div class="mapa-embebido">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.477148441552!2d-65.29177766125869!3d-24.19006300533452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1743828605424!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="150"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const icon = document.getElementById('icon');
+
+        if(localStorage.getItem('dark-mode') === 'true'){
+            document.body.classList.add('dark-mode');
+            icon.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const dark = document.body.classList.contains('dark-mode');
+            icon.textContent = dark ? '☀️' : '🌙';
+            localStorage.setItem('dark-mode', dark);
+        });
+    </script>
+</body>
+</html>

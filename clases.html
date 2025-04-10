@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clases</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER CON EL MENU -->
+    <header>
+        <nav class="mega-menu">
+            <ul class="menu-header">
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li class="desplegable">
+                    <span class="burger-menu">&#9776;</span>
+                    <div class="mega-desplegable">
+                        <div class="columna">
+                            <h4>Clases</h4>
+                            <a href="clases.html">Clases</a>
+                            <a href="clases.html">Horarios</a>
+                            <a href="clases.html">Galeria</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Entrenadores</h4>
+                            <a href="entrenadores.html">Nuestro Equipo</a>
+                            <a href="entrenadores.html">Estadisticas</a>
+                            <a href="entrenadores.html">Clasificacion</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Planes y Precios</h4>
+                            <a href="precios.html">Precios y Planes</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Blog</h4>
+                            <a href="blog.html">Ver Blog</a>
+                            <a href="blog.html">Comentarios</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <span id="icon">🌙</span>
+        </button>
+    </header>
+    <main class="contenido-principal">
+        <!-- FILTRADO DE CLASES: filtra las clases solamente con css, encargandose de no mostrar las clases que no tengan la categoria seleccionada -->
+        <section class="filtro-clases">
+            <h2>CLASES DISPONIBLES</h2>
+            <input type="radio" name="categoria" id="todas" checked>
+            <label for="todas">Todas</label>
+            <input type="radio" name="categoria" id="musculacion">
+            <label for="musculacion">Musculacion</label>
+            <input type="radio" name="categoria" id="yoga">
+            <label for="yoga">Yoga</label>
+            <input type="radio" name="categoria" id="crossfit">
+            <label for="crossfit">CrossFit</label>
+            <input type="radio" name="categoria" id="spinning">
+            <label for="spinning">Spinning</label>
+        <!-- TARJETAS DE CLASES: tarjetas con clases simples-->
+         <div class="tarjetas-clases">
+            <!-- MUSCULACION -->
+            <div class="tarjeta musculacion">
+                <div class="contenido">
+                    <h3>Full Body Strength</h3>
+                    <p>Press de Banca</p>
+                    <p>Peso Muerto</p>
+                    <p>Remo con barra</p>
+                    <h5>Musculacion</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <div class="tarjeta musculacion">
+                <div class="contenido">
+                    <h3>Tren Superior</h3>
+                    <p>Dominadas</p>
+                    <p>Curl de biceps</p>
+                    <p>Press militar</p>
+                    <h5>Musculacion</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <!-- YOGA -->
+            <div class="tarjeta yoga">
+                <div class="contenido">
+                    <h3>Power Yoga</h3>
+                    <p>Plancha</p>
+                    <p>Barco</p>
+                    <p>Chaturanga</p>
+                    <h5>Yoga</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <div class="tarjeta yoga">
+                <div class="contenido">
+                    <h3>Yoga Restaurativo</h3>
+                    <p>Mariposa</p>
+                    <p>Savasana</p>
+                    <p>Piernas contra la pared</p>
+                    <h5>Yoga</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <!-- CROSSFIT -->
+            <div class="tarjeta crossfit">
+                <div class="contenido">
+                    <h3>Cardio & Fuerza</h3>
+                    <p>Wall balls</p>
+                    <p>Remo</p>
+                    <p>Cuerdas</p>
+                    <h5>CrossFit</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <div class="tarjeta crossfit">
+                <div class="contenido">
+                    <h3>WOD Basico</h3>
+                    <p>Burpees</p>
+                    <p>Saltos al cajon</p>
+                    <p>Sit-ups</p>
+                    <h5>CrossFit</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <!-- SPINNING -->
+            <div class="tarjeta spinning">
+                <div class="contenido">
+                    <h3>Ritmo y Resistencia</h3>
+                    <p>Cadencia estable</p>
+                    <p>Sprints</p>
+                    <p>Subidas intensas</p>
+                    <h5>Spinning</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+            <div class="tarjeta spinning">
+                <div class="contenido">
+                    <h3>Fondo Extendido</h3>
+                    <p>Ejercicios de pie</p>
+                    <p>Control de respiracion</p>
+                    <p>Pedaleo sistenido</p>
+                    <h5>Spinning</h5>
+                </div>
+                <div class="overlay">
+                    <a href="#" class="boton-overlay">Ver mas</a>
+                </div>
+            </div>
+         </div>
+        </section>
+        <!-- GALERIA MASONRY: galeria con estilo masonry, se modifico la altura de las fotos directamente aqui para dar efecto de collage bien formado -->
+        <section class="galeria-masonry" id="galeria-masonry">
+            <h2>GALERIA DE SOCIOS</h2>
+            <div class="contenedor-masonry">
+                <a href="#foto1"><img src="https://images.pexels.com/photos/3289711/pexels-photo-3289711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 1" 
+                    style="height: 250px;">
+                </a>
+                <a href="#foto2"><img src="https://images.pexels.com/photos/1554824/pexels-photo-1554824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 2" 
+                    style="height: 300px;">
+                </a>
+                <a href="#foto3"><img src="https://images.pexels.com/photos/4720780/pexels-photo-4720780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 3" 
+                    style="height: 250px;">
+                </a>
+                <a href="#foto4"><img src="https://images.pexels.com/photos/3757647/pexels-photo-3757647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 4" 
+                    style="height: 200px;">
+                </a>
+                <a href="#foto5"><img src="
+                    https://images.pexels.com/photos/5929232/pexels-photo-5929232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 5" 
+                    style="height: 350px;">
+                </a>
+                <a href="#foto6"><img src="https://images.pexels.com/photos/4854257/pexels-photo-4854257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 6" 
+                    style="height: 250px;">
+                </a>
+                <a href="#foto7"><img src="https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 7" 
+                    style="height: 400px;">
+                </a>
+                <a href="#foto8"><img src="
+                    https://images.pexels.com/photos/4720797/pexels-photo-4720797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 8" 
+                    style="height: 200px;">
+                </a>
+                <a href="#foto9"><img src="
+                    https://images.pexels.com/photos/5327523/pexels-photo-5327523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 9" 
+                    style="height: 200px;">
+                </a>
+                <a href="#foto10"><img src="
+                    https://images.pexels.com/photos/13965345/pexels-photo-13965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 10" 
+                    style="height: 300px;">
+                </a>
+                <a href="#foto11"><img src="
+                    https://images.pexels.com/photos/4720834/pexels-photo-4720834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 11" 
+                    style="height: 150px;">
+                </a>
+                <a href="#foto12"><img src="https://images.pexels.com/photos/13965336/pexels-photo-13965336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    alt="Foto 12" 
+                    style="height: 350px;">
+                </a>
+            </div>
+            <!-- Esto es para que al hacer click se muestre la imagen a su tamaño real -->
+            <a href="#galeria-masonry" class="lightbox" id="foto1"><img src="https://images.pexels.com/photos/3289711/pexels-photo-3289711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 1"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto2"><img src="https://images.pexels.com/photos/1554824/pexels-photo-1554824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 2"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto3"><img src="https://images.pexels.com/photos/4720780/pexels-photo-4720780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 3"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto4"><img src="https://images.pexels.com/photos/3757647/pexels-photo-3757647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 4"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto5"><img src="https://images.pexels.com/photos/5929232/pexels-photo-5929232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 5"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto6"><img src="https://images.pexels.com/photos/4854257/pexels-photo-4854257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 6"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto7"><img src="https://images.pexels.com/photos/416809/pexels-photo-416809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 7"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto8"><img src="https://images.pexels.com/photos/4720797/pexels-photo-4720797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 8"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto9"><img src="https://images.pexels.com/photos/5327523/pexels-photo-5327523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 9"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto10"><img src="https://images.pexels.com/photos/13965345/pexels-photo-13965345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 10"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto11"><img src="https://images.pexels.com/photos/4720834/pexels-photo-4720834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 11"></a>
+            <a href="#galeria-masonry" class="lightbox" id="foto12"><img src="https://images.pexels.com/photos/13965336/pexels-photo-13965336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Foto 12"></a>
+        </section>
+        <!-- TABLA DE HORARIOS SEMANALES: tabla simple con horarios aleatorios -->
+        <section class="horario">
+            <h2>HORARIOS SEMANALES</h2>
+            <div class="tabla-horarios">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 - 10:00</td>
+                            <td>Musculacion</td>
+                            <td>Spinning</td>
+                            <td>Musculacion</td>
+                            <td>Spinning</td>
+                            <td>Musculacion</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 12:00</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Yoga</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 14:00</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>Spinning</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 16:00</td>
+                            <td>CrossFit</td>
+                            <td>Musculacion</td>
+                            <td>CrossFit</td>
+                            <td>Musculacion</td>
+                            <td>CrossFit</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 18:00</td>
+                            <td>Musculacion</td>
+                            <td>CrossFit</td>
+                            <td>Musculacion</td>
+                            <td>CrossFit</td>
+                            <td>Musculacion</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 - 20:00</td>
+                            <td>Yoga</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                            <td>Spinning</td>
+                            <td>Yoga</td>
+                        </tr>
+                        <tr>
+                            <td>20:00 - 22:00</td>
+                            <td>CrossFit</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                            <td>Yoga</td>
+                            <td>CrossFit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribete al Newsletter!</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <!-- REDES SOCIALES -->
+            <div class="redes">
+                <h3>Siguenos en nuestras redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+            <!-- MAPA EMBEBIDO -->
+            <div class="mapa">
+                <h3>Donde nos ubicamos</h3>
+                <div class="mapa-embebido">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.477148441552!2d-65.29177766125869!3d-24.19006300533452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1743828605424!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="150"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const icon = document.getElementById('icon');
+
+        if(localStorage.getItem('dark-mode') === 'true'){
+            document.body.classList.add('dark-mode');
+            icon.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const dark = document.body.classList.contains('dark-mode');
+            icon.textContent = dark ? '☀️' : '🌙';
+            localStorage.setItem('dark-mode', dark);
+        });
+    </script>
+</body>
+</html>

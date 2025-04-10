@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HEADER CON EL MENU -->
+    <header>
+        <nav class="mega-menu">
+            <ul class="menu-header">
+                <li><a href="index.html">Pagina Principal</a></li>
+                <li class="desplegable">
+                    <span class="burger-menu">&#9776;</span>
+                    <div class="mega-desplegable">
+                        <div class="columna">
+                            <h4>Clases</h4>
+                            <a href="clases.html">Clases</a>
+                            <a href="clases.html">Horarios</a>
+                            <a href="clases.html">Galeria</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Entrenadores</h4>
+                            <a href="entrenadores.html">Nuestro Equipo</a>
+                            <a href="entrenadores.html">Estadisticas</a>
+                            <a href="entrenadores.html">Clasificacion</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Planes y Precios</h4>
+                            <a href="precios.html">Precios y Planes</a>
+                        </div>
+                        <div class="columna">
+                            <h4>Blog</h4>
+                            <a href="blog.html">Ver Blog</a>
+                            <a href="blog.html">Comentarios</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+            <span id="icon">🌙</span>
+        </button>
+    </header>
+    <main class="contenido-principal">
+        <!-- FORMULARIO DE CONTACTO: todo lo que es el formulario, este solo deja enviar al llenar los datos correctamente, tiene un spinner de carga y luego de unos segundos un modal de confirmacion-->
+        <section class="formulario-contacto">
+            <h2>CONTACTO</h2>
+            <form class="formulario" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="motivo">Motivo del contacto</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Seleccione una opcion</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte Tecnico</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <!-- CHECK PARA SIMULAR UN BOTON DE ENVIO: ya que no podemos enviar el formulario, lo simulamos con un check de cuando se aprieta el boton, y cuando se confirma el envio -->
+                <input type="checkbox" id="enviando" hidden>
+                <label for="enviando" class="boton-enviar" role="button">Enviar</label>
+                <!-- SPINNER: el spinner al enviar el formulario -->
+                <div class="spinner-overlay">
+                    <div class="spinner"></div>
+                </div>
+                <!-- MODAL DE CONFIRMACION: modal para indicar que se envio el formulario -->
+                 <div class="modal-confirmacion">
+                    <div class="modal-contenido">
+                        <h3>Gracias por contactarnos!</h3>
+                        <p>Su mensaje fue enviado correctamente</p>
+                        <label for="enviando" class="boton-enviar">Cerrar</label>
+                    </div>
+                 </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribete al Newsletter!</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <!-- REDES SOCIALES -->
+            <div class="redes">
+                <h3>Siguenos en nuestras redes sociales</h3>
+                <div class="redes-sociales">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+            <!-- MAPA EMBEBIDO -->
+            <div class="mapa">
+                <h3>Donde nos ubicamos</h3>
+                <div class="mapa-embebido">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.477148441552!2d-65.29177766125869!3d-24.19006300533452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1743828605424!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="150"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const icon = document.getElementById('icon');
+
+        if(localStorage.getItem('dark-mode') === 'true'){
+            document.body.classList.add('dark-mode');
+            icon.textContent = '☀️';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const dark = document.body.classList.contains('dark-mode');
+            icon.textContent = dark ? '☀️' : '🌙';
+            localStorage.setItem('dark-mode', dark);
+        });
+    </script>
+</body>
+</html>
